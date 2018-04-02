@@ -16,8 +16,7 @@ function addToCart(item) {
  }
 
  cart.push(product);
- console.log(`${item} has been added to your cart.`);
- return cart;
+ return `${item} has been added to your cart.`
 }
 
 function viewCart() {
