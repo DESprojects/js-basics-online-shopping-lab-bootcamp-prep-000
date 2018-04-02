@@ -23,9 +23,9 @@ function viewCart() {
 
   if(cart.length > 0){
       if(cart.length === 1){
-        console.log(`In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`);
+        return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`;
       } else if(cart.length === 2){
-        console.log(`In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`);
+        return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`;
       } else if(cart.length > 2){
           var str = `In your cart, you have `;
 
@@ -36,10 +36,10 @@ function viewCart() {
               str += `and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
             }
         }
-        console.log(str);
+        return str;
       }
   } else {
-    console.log(`Your shopping cart is empty.`);
+    return `Your shopping cart is empty.`;
   }
 }
 
