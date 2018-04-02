@@ -15,7 +15,6 @@ function addToCart(item) {
     itemPrice: Math.floor(Math.random() * 100)
  }
 
- console.log(product);
  cart.push(product);
  console.log(`${item} has been added to your cart.`);
  return cart;
